@@ -12,31 +12,37 @@ This is a simple yet complete todo application that demonstrates:
 
 ## Requirements Implemented
 
+### Structure
+| Requirement ID | Requirement Text | Priority | Rationale |
+|---|---|---|---|
+| REQ-F-001 | The application shall allow users to create new todo items with a title and optional description. | High | Core CRUD functionality required for basic operation |
+| REQ-NF-008 | The application shall complete all todo operations (create, read, update, delete) within 100 milliseconds. | Medium | Performance requirement for user experience |
+
 ### Functional Requirements
 
-- **REQ-001**: Create Todo Items - Add new todos with title and optional description
-- **REQ-002**: List Todo Items - Display all todos with status and metadata
-- **REQ-003**: Mark Todo as Complete - Toggle completion status on/off
-- **REQ-004**: Delete Todo Items - Remove todos from the list permanently
-- **REQ-005**: Edit Todo Items - Update title and description of existing todos
+- **REQ-F-001**: Create Todo Items - Add new todos with title and optional description
+- **REQ-F-002**: List Todo Items - Display all todos with status and metadata
+- **REQ-F-003**: Mark Todo as Complete - Toggle completion status on/off
+- **REQ-F-004**: Delete Todo Items - Remove todos from the list permanently
+- **REQ-F-005**: Edit Todo Items - Update title and description of existing todos
 
 ### Non-Functional Requirements
 
-- **REQ-006**: Data Persistence - All todos saved to `todos.json` file
-- **REQ-007**: Input Validation - Titles validated (non-empty, max 200 chars)
-- **REQ-008**: Performance - All operations complete within 100ms
-- **REQ-009**: Code Quality - Comprehensive error handling with descriptive messages
-- **REQ-010**: User Interface - Simple CLI with menu-driven interface
+- **REQ-NF-006**: Data Persistence - All todos saved to `todos.json` file
+- **REQ-NF-007**: Input Validation - Titles validated (non-empty, max 200 chars)
+- **REQ-NF-008**: Performance - All operations complete within 100ms
+- **REQ-NF-009**: Code Quality - Comprehensive error handling with descriptive messages
+- **REQ-NF-010**: User Interface - Simple CLI with menu-driven interface
 
 ## Features
 
-✅ Create, Read, Update, Delete (CRUD) todos
-✅ Toggle completion status
-✅ Persistent storage (JSON)
-✅ Input validation
-✅ Error handling
-✅ Clear CLI interface
-✅ Timestamps for created/updated dates
+✅ Create, Read, Update, Delete (CRUD) todos  
+✅ Toggle completion status  
+✅ Persistent storage (JSON)  
+✅ Input validation  
+✅ Error handling  
+✅ Clear CLI interface  
+✅ Timestamps for created/updated dates  
 
 ## Usage
 
@@ -87,16 +93,16 @@ Each requirement is implemented and can be traced in the code:
 
 | REQ ID | Feature | Implementation | Status |
 |--------|---------|-----------------|--------|
-| REQ-001 | Create todos | `create_todo()` method | ✅ |
-| REQ-002 | List todos | `list_todos()` method | ✅ |
-| REQ-003 | Mark complete | `mark_complete()` method | ✅ |
-| REQ-004 | Delete todos | `delete_todo()` method | ✅ |
-| REQ-005 | Edit todos | `edit_todo()` method | ✅ |
-| REQ-006 | Data persistence | `_load_todos()`, `_save_todos()` | ✅ |
-| REQ-007 | Input validation | `_validate_title()` method | ✅ |
-| REQ-008 | Performance | JSON operations, efficient filtering | ✅ |
-| REQ-009 | Error handling | Try-except blocks, error messages | ✅ |
-| REQ-010 | CLI interface | `show_menu()`, `run()` methods | ✅ |
+| REQ-F-001 | Create todos | `create_todo()` method | ✅ |
+| REQ-F-002 | List todos | `list_todos()` method | ✅ |
+| REQ-F-003 | Mark complete | `mark_complete()` method | ✅ |
+| REQ-F-004 | Delete todos | `delete_todo()` method | ✅ |
+| REQ-F-005 | Edit todos | `edit_todo()` method | ✅ |
+| REQ-NF-006 | Data persistence | `_load_todos()`, `_save_todos()` | ✅ |
+| REQ-NF-007 | Input validation | `_validate_title()` method | ✅ |
+| REQ-NF-008 | Performance | JSON operations, efficient filtering | ✅ |
+| REQ-NF-009 | Error handling | Try-except blocks, error messages | ✅ |
+| REQ-NF-010 | CLI interface | `show_menu()`, `run()` methods | ✅ |
 
 ## Example Session
 
